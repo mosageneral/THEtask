@@ -1,0 +1,46 @@
+﻿body {
+   
+    padding-bottom: 20px;
+}
+
+.bg-light {
+    background-color: #358ce2 !important;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+   
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}

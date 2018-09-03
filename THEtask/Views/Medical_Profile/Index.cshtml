@@ -1,0 +1,74 @@
+﻿@model IEnumerable<THEtask.Models.Medical_Profile>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@ViewBag.check</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Weight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Height)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Goal_of_diet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Exercise_Time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Leve_of_Exercise)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Daily_Food)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Vitamins)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Problem_History)
+        </th>
+      
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Weight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Height)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Goal_of_diet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Exercise_Time)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Leve_of_Exercise)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Daily_Food)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Vitamins)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Problem_History)
+        </td>
+       
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) 
+           
+        </td>
+    </tr>
+}
+
+</table>
